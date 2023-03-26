@@ -19,10 +19,10 @@ These machines will be cloned to create all of the others
 		- Change Computer Name: DC
 
 	Install VBoxGuestAdditions.exe
-		'''shell
+		```
 		D:
 		.\VBoxWindowsAdditions.exe
-		'''
+		```
 	
 	Create Snapshot in VBox
 
@@ -58,15 +58,15 @@ These will be the first macines to get our domain up and running
 		- Change DNS to match IPv4 address
 
 	Install AD Domain Services
-		'''
+		```
 		Install-WindowsFeature AD-Domain-Services -IncludeManagementTools
-		'''
+		```
 		
 	Setup new domain with new forest:
-		'''
+		```
 		import-module ADDSDeployment
 		Install-ADDSForest
-		'''
+		```
 		
 		DomainName: xyz.local
 		Safe Mode Administrator Password: P@ssw0rd123
@@ -85,15 +85,15 @@ These will be the first macines to get our domain up and running
 			- ServiceStatus >> Start
 	
 	Add Domain Controller to trusted hosts:
-		'''
+		```
 		set-item wsman:\\localhost\Client\TrustedHosts -value [DC local IP]
-		'''
+		```
 	
 	Test PSRemoting:
-		'''
+		```
 		New-PSSession [DC IP] -Credential (Get-Credential)
 		Enter-PSSession [DC Session #]
-		'''
+		```
 		
 	Take Snapshot
 
