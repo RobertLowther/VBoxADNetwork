@@ -16,13 +16,13 @@ Install Windows Server 2022 Without desktop experience
 Set Administrator Password: P@ssw0rd123!
 
 Use SConfig to:
-	- Change Computer Name: DC
+- Change Computer Name: DC
 
 Install VBoxGuestAdditions.exe
-	```
-	D:
-	.\VBoxWindowsAdditions.exe
-	```
+```
+D:
+.\VBoxWindowsAdditions.exe
+```
 
 Create Snapshot in VBox
 
