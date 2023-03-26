@@ -8,8 +8,8 @@ Create Virtual Machine
 - 3072 MB of memory
 - 80 GB of storage
 - Network Adapters
-+ Bridged Adapter
-+ NAT
+	- Bridged Adapter
+	- NAT
 		
 Install Windows Server 2022 Without desktop experience
 
@@ -33,8 +33,8 @@ Create Virtual Machine
 - 5020 MB memory
 - 50 GB of storage
 - Network Adapters
-+ Bridged Adapter
-+ NAT
+	- Bridged Adapter
+	- NAT
 		
 Install Windows 11 Enterprise Evaluation Edition
 
@@ -58,15 +58,15 @@ Use SConfig to:
 - Change DNS to match IPv4 address
 
 Install AD Domain Services
-	```
-	Install-WindowsFeature AD-Domain-Services -IncludeManagementTools
-	```
+```
+Install-WindowsFeature AD-Domain-Services -IncludeManagementTools
+```
 	
 Setup new domain with new forest:
-	```
-	import-module ADDSDeployment
-	Install-ADDSForest
-	```
+```
+import-module ADDSDeployment
+Install-ADDSForest
+```
 	
 	DomainName: xyz.local
 	Safe Mode Administrator Password: P@ssw0rd123
