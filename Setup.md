@@ -69,6 +69,7 @@ Install-ADDSForest
 ```
 	
 DomainName: xyz.local
+
 Safe Mode Administrator Password: P@ssw0rd123
 
 Use SConfig to:
@@ -80,7 +81,7 @@ Take Snapshot
 Clone Base Workstation
 
 Set WinRM to begin Automatically and start service
-	Services >> Windows Remote Management >> Properties
+-Services >> Windows Remote Management >> Properties
 	- Startup Type >> Automatic
 	- ServiceStatus >> Start
 
