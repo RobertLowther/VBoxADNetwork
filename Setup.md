@@ -1,4 +1,7 @@
-Setup Base Domain Controller
+# Create Base Machines
+These machines will be cloned to create all of the others
+
+## Setup Base Domain Controller
 
 	Create Virtual Machine
 		- 2 Processors
@@ -16,14 +19,14 @@ Setup Base Domain Controller
 		- Change Computer Name: DC
 
 	Install VBoxGuestAdditions.exe
-		```shell
+		'''shell
 		D:
 		.\VBoxWindowsAdditions.exe
-		```
+		'''
 	
 	Create Snapshot in VBox
 
-Setup Base Workstation
+## Setup Base Workstation
 
 	Create Virtual Machine
 		- 2 Processors
@@ -40,7 +43,13 @@ Setup Base Workstation
 	Create Snapshot in VBox
 
 
-Setup Domain Controller 01
+# Create Initial Working Machines
+These will be the first macines to get our domain up and running
+	- Domain Controller 01
+	- Work Station 01
+	- Management Console
+
+## Setup Domain Controller 01
 	Clone Base Domain Controller
 
 	Use SConfig to:
@@ -67,7 +76,7 @@ Setup Domain Controller 01
 
 	Take Snapshot
 	
-Setup Management Console (PSRemoting)
+## Setup Management Console (PSRemoting)
 	Clone Base Workstation
 	
 	Set WinRM to begin Automatically and start service
@@ -87,3 +96,6 @@ Setup Management Console (PSRemoting)
 		'''
 		
 	Take Snapshot
+
+## Setup Work Station 01
+	Clone Base Workstation
