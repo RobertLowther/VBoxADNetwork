@@ -16,10 +16,10 @@ Setup Base Domain Controller
 		- Change Computer Name: DC
 
 	Install VBoxGuestAdditions.exe
-		'''shell
+		```shell
 		D:
 		.\VBoxWindowsAdditions.exe
-		'''
+		```
 	
 	Create Snapshot in VBox
 
