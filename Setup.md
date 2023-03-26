@@ -68,8 +68,8 @@ import-module ADDSDeployment
 Install-ADDSForest
 ```
 	
-	DomainName: xyz.local
-	Safe Mode Administrator Password: P@ssw0rd123
+DomainName: xyz.local
+Safe Mode Administrator Password: P@ssw0rd123
 
 Use SConfig to:
 - Change DNS to match IPv4 address
@@ -85,14 +85,14 @@ Set WinRM to begin Automatically and start service
 	- ServiceStatus >> Start
 
 Add Domain Controller to trusted hosts:
-	```
-	set-item wsman:\\localhost\Client\TrustedHosts -value [DC local IP]
-	```
+```
+set-item wsman:\\localhost\Client\TrustedHosts -value [DC local IP]
+```
 
 Test PSRemoting:
-	```
-	New-PSSession [DC IP] -Credential (Get-Credential)
-	Enter-PSSession [DC Session #]
+```
+New-PSSession [DC IP] -Credential (Get-Credential)
+Enter-PSSession [DC Session #]
 	```
 	
 Take Snapshot
