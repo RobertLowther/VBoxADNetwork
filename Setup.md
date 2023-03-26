@@ -82,8 +82,8 @@ Clone Base Workstation
 
 Set WinRM to begin Automatically and start service:
 -Services >> Windows Remote Management >> Properties
-	- Startup Type >> Automatic
-	- ServiceStatus >> Start
+- Startup Type >> Automatic
+- ServiceStatus >> Start
 
 Add Domain Controller to trusted hosts:
 ```
