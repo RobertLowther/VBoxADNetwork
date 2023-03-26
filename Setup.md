@@ -4,12 +4,12 @@ These machines will be cloned to create all of the others
 ## Setup Base Domain Controller
 
 Create Virtual Machine
-	- 2 Processors
-	- 3072 MB of memory
-	- 80 GB of storage
-	- Network Adapters
-		- Bridged Adapter
-		- NAT
+- 2 Processors
+- 3072 MB of memory
+- 80 GB of storage
+- Network Adapters
++ Bridged Adapter
++ NAT
 		
 Install Windows Server 2022 Without desktop experience
 
@@ -29,12 +29,12 @@ Create Snapshot in VBox
 ## Setup Base Workstation
 
 Create Virtual Machine
-	- 2 Processors
-	- 5020 MB memory
-	- 50 GB of storage
-	- Network Adapters
-		- Bridged Adapter
-		- NAT
+- 2 Processors
+- 5020 MB memory
+- 50 GB of storage
+- Network Adapters
++ Bridged Adapter
++ NAT
 		
 Install Windows 11 Enterprise Evaluation Edition
 
@@ -53,9 +53,9 @@ These will be the first macines to get our domain up and running
 Clone Base Domain Controller
 
 Use SConfig to:
-	- Change Computer Name: DC01
-	- Set Static IP
-	- Change DNS to match IPv4 address
+- Change Computer Name: DC01
+- Set Static IP
+- Change DNS to match IPv4 address
 
 Install AD Domain Services
 	```
@@ -72,7 +72,7 @@ Setup new domain with new forest:
 	Safe Mode Administrator Password: P@ssw0rd123
 
 Use SConfig to:
-	- Change DNS to match IPv4 address
+- Change DNS to match IPv4 address
 
 Take Snapshot
 
@@ -81,8 +81,8 @@ Clone Base Workstation
 
 Set WinRM to begin Automatically and start service
 	Services >> Windows Remote Management >> Properties
-		- Startup Type >> Automatic
-		- ServiceStatus >> Start
+	- Startup Type >> Automatic
+	- ServiceStatus >> Start
 
 Add Domain Controller to trusted hosts:
 	```
