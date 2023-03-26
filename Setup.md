@@ -16,7 +16,7 @@ Setup Base Domain Controller
 		- Change Computer Name: DC
 
 	Install VBoxGuestAdditions.exe
-		'''
+		'''shell
 		D:
 		.\VBoxWindowsAdditions.exe
 		'''
