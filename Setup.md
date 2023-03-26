@@ -81,6 +81,7 @@ Take Snapshot
 Clone Base Workstation
 
 Set WinRM to begin Automatically and start service:
+
 - Services >> Windows Remote Management >> Properties
 	- Startup Type >> Automatic
 	- ServiceStatus >> Start
