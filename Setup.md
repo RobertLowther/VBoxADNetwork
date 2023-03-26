@@ -94,7 +94,7 @@ Test PSRemoting:
 ```
 New-PSSession [DC IP] -Credential (Get-Credential)
 Enter-PSSession [DC Session #]
-	```
+```
 	
 Take Snapshot
 
