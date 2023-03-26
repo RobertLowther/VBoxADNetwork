@@ -48,7 +48,6 @@ These will be the first macines to get our domain up and running
 - Domain Controller 01
 - Work Station 01
 - Management Console
-
 ## Setup Domain Controller 01
 Clone Base Domain Controller
 
@@ -101,3 +100,22 @@ Take Snapshot
 
 ## Setup Work Station 01
 Clone Base Workstation
+
+set DNS to Domain IP
+```
+Get-NetIPAddress
+```
+
+Get [InterfaceIndex] of the BridgedAdapter
+
+```
+Set-DnsClientServerAddress -InterfaceIndex [InterfaceIndex] -ServerAddress 192.168.0.13
+```
+
+Join the Domain
+- Settings >> Account >> Access work or school
+- Add a work or school account >> Connect
+	- Join this device to a local Active Directory Domain
+		- Domain name: xyz.local
+
+Do not create a Domain User at this time, press Skip.
