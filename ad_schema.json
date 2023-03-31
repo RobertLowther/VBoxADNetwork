@@ -1,4 +1,6 @@
 {
+    "domain": "xyz.local",
+    
     "groups" : [
         {
             "name": "Engineering"
@@ -7,9 +9,7 @@
 
     "Users": [
         {
-            "first_name": "John",
-            "last_name": "Hammond",
-            "username": "jhammond",
+            "name": "John Hammond",
             "password": "password",
             "groups": [
                 "Engineering"
