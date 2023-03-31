@@ -1,18 +1,26 @@
 {
     "domain": "xyz.local",
-    
+
     "groups" : [
         {
-            "name": "Engineering"
+            "name": "Employees"
         }
     ],
 
     "Users": [
         {
-            "name": "John Hammond",
-            "password": "password",
+            "name": "Alice Lice",
+            "password": "P@ssw0rd789",
             "groups": [
-                "Engineering"
+                "Employees"
+            ]
+        },
+        
+        {
+            "name": "Bob Ob",
+            "password": "P@ssw0rdABC",
+            "groups": [
+                "Employees"
             ]
         }
     ]
