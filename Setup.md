@@ -48,6 +48,7 @@ These will be the first macines to get our domain up and running
 - Domain Controller 01
 - Work Station 01
 - Management Console
+
 ## Setup Domain Controller 01
 Clone Base Domain Controller
 
