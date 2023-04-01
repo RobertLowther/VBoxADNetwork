@@ -16,7 +16,7 @@ for ($i = 0; $i -lt $num_groups; $i++)
 
 $users = @()
 $num_users = 100
-for ($i = 0; $i -lt $num_groups; $i++)
+for ($i = 0; $i -lt $num_users; $i++)
 {
     $first_name = (Get-Random -InputObject $first_names)
     $last_name = (Get-Random -InputObject $last_names)
