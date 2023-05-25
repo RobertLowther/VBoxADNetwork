@@ -48,7 +48,6 @@ These will be the first macines to get our domain up and running
 - Domain Controller 01
 - Work Station 01
 - Management Console
-
 ## Setup Domain Controller 01
 Clone Base Domain Controller
 
@@ -96,7 +95,17 @@ Test PSRemoting:
 New-PSSession [DC IP] -Credential (Get-Credential)
 Enter-PSSession [DC Session #]
 ```
-	
+
+Install Chocolatey:
+```
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+```
+
+Install VSCode:
+```
+choco install vscode
+```
+
 Take Snapshot
 
 ## Setup Work Station 01
